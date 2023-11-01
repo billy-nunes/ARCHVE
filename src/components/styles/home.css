@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+
+
+html, body {
+    height: 100%;
+    background: radial-gradient(circle, #fff, rgba(168, 168, 168, 1));
+}
+
+/*homepage*/
+
+.nav {
+    overflow: hidden;
+    color: #000;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li:first-child {
+    font-family: Inter;
+    font-weight: 800;
+    font-size: 24px;
+    margin: 20px 20px 0px 20px;
+}
+
+.nav li.right {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 23px 20px auto;
+    line-height: 19.36px;
+    float: right;
+}
+
+.nav li a {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav li.right a:hover {
+    color: #fff;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 6rem;
+}
+
+.wrapper img {
+    max-width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: #474444; /* Text color */
+    padding: 10px 20px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 85px;
+}
+
+.overlay-text-2 {
+    position: absolute;
+    top: 80%;
+    left: 55%;
+    transform: translate(50%, -50%);
+    color: #fff;
+    font-family: Inter;
+    font-weight: 800;
+    font-size: 85px;
+}
+
+/*shop page (no longer being used)*/ 
+.productContainer {
+    display: flex;
+    justify-content: between;
+
+}
+
+.about {
+    padding: 10px;
+    background: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    position: relative;
+    margin: 10px;
+}
+
+.picture {
+    /* width: 350px;
+    height: 450px; */
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;  
+}
+
+.shop-button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    opacity: 0;
+}
+
+.item:hover .overlay {
+    opacity: 1;
+}
+
+.item:hover .shop-button {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.aboutTitle {
+    color: #000;
+    font-family: Inter;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+}
+
+.aboutSubtitle {
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transform: translate(55%);
+}
+
+.center-button {
+    display: flex;
+    justify-content: center;
+}
+
+.dsvrButton {
+    background: #000;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    margin-top: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.dsvrButton:hover {
+    opacity: 0.9;
+}
+
+/* winter shop */
+.winter-container {
+    height: 550px;
+    width: 100%;
+    background-color: #000;
+}
+
+.background-img {
+    width: 100%;
+    height: 100%;
+}
+
+.small-img {
+    position: absolute;
+    height: 450;
+    width: 350px;
+    top: 50%;
+    left: 101%;
+    transform: translate(-330%, 315%);
+}
+
+.winter-title {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-26%, -1360%);
+}
+
+/* slideshow */
+
+
+/* footer */
+.footer {
+    background: #000;
+    padding: 10px;
+
+} 
+
+.endtag {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3px;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a {
+   text-decoration: none; 
+   color: #FFF;
+   font-family: Inter;
+   font-size: 10px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+   letter-spacing: 3px;
+}
+
+
+
+
